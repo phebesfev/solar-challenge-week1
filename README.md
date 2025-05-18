@@ -20,19 +20,22 @@ This project is part of the **Solar Challenge Week 0**, focusing on analyzing so
 ```bash
 git clone https://github.com/your-username/solar-challenge-week1.git
 cd solar-challenge-week1
-### 2. Create a Virtual Environment
+### **2. Create a Virtual Environment**
 
+```bash
 python -m venv venv
 # Activate on Windows
 venv\Scripts\activate
 
 # Activate on macOS/Linux
 source venv/bin/activate
-### 3. Install Dependencies
+### **3. Install Dependencies**
 
+```bash
 pip install -r requirements.txt
-### 4. Launch Jupyter Notebook
+### **4. Launch Jupyter Notebook**
 
+```bash
 jupyter notebook
 📊 Dataset
 The dataset is sourced from EnergyDataInfo.
