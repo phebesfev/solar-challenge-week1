@@ -1,4 +1,3 @@
-# fix_notebook.py
 import nbformat
 import os
 
@@ -9,6 +8,8 @@ if not os.path.exists(notebook_path):
 else:
     with open(notebook_path, 'r', encoding='utf-8') as f:
         nb = nbformat.read(f, as_version=4)
+
+    print(f"Notebook has {len(nb.cells)} cells.")
 
     with open(notebook_path, 'w', encoding='utf-8') as f:
         nbformat.write(nb, f)
