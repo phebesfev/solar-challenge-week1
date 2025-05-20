@@ -1,7 +1,7 @@
 import nbformat
 import os
 
-notebook_path = 'notebooks/senegal_eda2.ipynb'
+notebook_path = 'notebooks/senegal_eda.ipynb'
 
 if not os.path.exists(notebook_path):
     print(f"Notebook not found at: {notebook_path}")
