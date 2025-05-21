@@ -2,7 +2,18 @@
 
 An interactive Streamlit dashboard to explore solar radiation data (GHI, DNI, DHI) across Benin, Togo, and Sierra Leone. Includes Senegal data preprocessing and multi-country comparison notebooks. Built for the KAIM Solar Challenge Week 0.
 
-![Dashboard Screenshot](screenshots/dashboard_main.png)
+![Image](https://github.com/user-attachments/assets/3bb7b2d0-9674-437d-a977-0541f0bb5aed)
+Choosing between the 3 countries
+
+![Image](https://github.com/user-attachments/assets/dcb2d049-008c-49f9-9210-82baaa93aef3)
+Benin's Summary Statistics(If the user chooses benin)
+
+![Image](https://github.com/user-attachments/assets/bd983cf7-9568-4b15-8b42-9381d6ce25a6)
+Benin's GHI and Top 5 Days with Highest Average GHI(If the user chooses benin)
+
+
+![Image](https://github.com/user-attachments/assets/29d4e141-77e7-403f-b17d-da09a8dfe3c9)
+Togo's Summary Statistics(If the user chooses togo)
 
 
 
