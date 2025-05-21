@@ -1,85 +1,91 @@
-# 🌞 Solar Radiation Analysis - Senegal (Week 0 Challenge)
+# ☀️ Solar Data Dashboard
 
-## 📌 Project Overview
+An interactive Streamlit dashboard to explore solar radiation data (GHI, DNI, DHI) across Benin, Togo, and Sierra Leone. Includes Senegal data preprocessing and multi-country comparison notebooks. Built for the KAIM Solar Challenge Week 0.
 
-This project is part of the **Solar Challenge Week 0**, focusing on analyzing solar radiation data from **Senegal**. The main objectives are:
-
-- 📁 Git version control  
-- ⚙️ Python environment setup  
-- 📊 Exploratory Data Analysis (EDA)  
-- 📈 Data cleaning and profiling  
+![Dashboard Screenshot](screenshots/dashboard_main.png)
 
 ---
 
+## 🔧 Setup
 
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/solar-challenge-week1.git
-cd solar-challenge-week1
-### **2. Create a Virtual Environment**
+git clone https://github.com/yourusername/solar-dashboard.git
+cd solar-dashboard
+
+### 2. Create virtual environment & install dependencies
 
 ```bash
 python -m venv venv
-# Activate on Windows
-venv\Scripts\activate
-
-# Activate on macOS/Linux
-source venv/bin/activate
-### **3. Install Dependencies**
-
-```bash
+source venv/bin/activate     # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-### **4. Launch Jupyter Notebook**
+
+### 3. Run the app
 
 ```bash
-jupyter notebook
-📊 Dataset
-The dataset is sourced from EnergyDataInfo.
-A local copy is saved at:
+cd app
+streamlit run main.py
+
+📁 Project Structure
+
+solar-challenge-week1/
+├── .gitignore                   # Excludes 'data/' and other artifacts
+├── .vscode/
+│   └── settings.json            # Editor settings
+├── app/
+│   ├── __init__.py
+│   ├── main.py                  # Main Streamlit dashboard
+│   └── utils.py                 # Data loading & plotting functions
+├── data/                        # Raw/cleaned CSV files (excluded by .gitignore)
+├── github/
+│   └── workflows/
+│       └── ci.yml               # GitHub Actions CI workflow
+├── notebooks/
+│   ├── compare_countries.ipynb # GHI comparison: Benin, Togo, Sierra Leone
+│   └── senegal_eda.ipynb       # Senegal data cleaning and EDA
+├── requirements.txt            # Python dependencies
+├── screenshots/
+│   ├── dashboard_main.png
+│   └── top_days_table.png
+├── scripts/
+│   ├── __init__.py
+│   └── README.md               # Script usage notes (if any)
+├── source/                     # (Optional) source files for further extension
+├── tests/                      # Unit and integration tests
+├── venv/                       # Virtual environment (excluded by .gitignore)
+└── README.md                   # Project documentation (this file)
+
+📊 Features
+📈 Box plot of GHI distribution per country
+
+📋 Summary statistics (GHI, DNI, DHI)
+
+🔝 Top 5 highest-GHI days per country
+
+🌍 Country selection: Benin, Togo, Sierra Leone
+
+📊 Notebook: average GHI comparison (3 countries)
+
+🧹 Notebook: Senegal dataset cleaning and EDA
+
+📦 Requirements
+Install with:
+
+```
+pip install -r requirements.txt
+```
+requirements.txt contents:
+
+text
+Copy
+Edit
+streamlit
+pandas
+plotly
+matplotlib
+seaborn
 
 
-notebooks/senegal_raw.csv
-Note: This file is excluded from Git via .gitignore.
 
-📒 Notebooks
-senegal_eda2.ipynb:
-Contains the full exploratory workflow:
 
-✅ Missing value analysis
-
-✅ Outlier detection and handling
-
-✅ Time series visualizations
-
-✅ Correlation studies between variables
-
-✅ Notebook Validation
-The notebook has been validated using nbformat and is compatible with GitHub rendering.
-
-To fix a broken notebook (e.g., not appearing in GitHub due to formatting issues), run:
-
-python fix_notebook.py
-🧪 GitHub Actions (CI)
-Basic GitHub Actions workflow included to:
-
-Set up the Python environment
-
-(Future scope) Run notebook checks and unit tests
-
-Workflow file: .github/workflows/unittests.yml
-
-🚧 Notes
-Raw datasets are excluded from version control.
-
-Always ensure your Jupyter kernel matches the virtual environment interpreter.
-
-The project follows modular structure for scalability.
-
-📬 Feedback & Contribution
-If you spot an issue or want to contribute, feel free to:
-Open a GitHub Issue
-Submit a Pull Request
