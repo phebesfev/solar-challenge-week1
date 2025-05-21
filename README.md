@@ -12,20 +12,20 @@ An interactive Streamlit dashboard to explore solar radiation data (GHI, DNI, DH
 
 ```bash
 git clone https://github.com/yourusername/solar-dashboard.git
-cd solar-dashboard
+cd solar-dashboard ```
 
 ### 2. Create virtual environment & install dependencies
 
 ```bash
 python -m venv venv
 source venv/bin/activate     # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements.txt ```
 
 ### 3. Run the app
 
 ```bash
 cd app
-streamlit run main.py
+streamlit run main.py ```
 
 📁 Project Structure
 
