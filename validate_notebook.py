@@ -2,7 +2,7 @@
 import nbformat
 from nbformat.validator import validate, ValidationError
 
-notebook_path = "notebooks/senegal_eda2.ipynb"  # <- Your actual file
+notebook_path = "notebooks/senegal_eda.ipynb"  # <- Your actual file
 
 try:
     with open(notebook_path, "r", encoding="utf-8") as f:
