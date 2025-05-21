@@ -76,7 +76,7 @@ solar-challenge-week1/
 🧹 Notebook: Senegal dataset cleaning and EDA
 
 
-###📦 Requirements
+### 📦 Requirements
 Install with:
 
 ```
