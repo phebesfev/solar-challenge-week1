@@ -61,8 +61,11 @@ solar-challenge-week1/
 │   └── senegal_eda.ipynb       # Senegal data cleaning and EDA
 ├── requirements.txt            # Python dependencies
 ├── screenshots/
-│   ├── dashboard_main.png
-│   └── top_days_table.png
+│   ├── benin-ghi and average.jpg
+│   ├── benin-summarystatistics.jpg
+│   ├── country-choice.jpg
+│   ├── togo-ghi and average.jpg
+│   └── togo-summarystatistics.jpg
 ├── scripts/
 │   ├── __init__.py
 │   └── README.md               # Script usage notes (if any)
