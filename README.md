@@ -84,14 +84,13 @@ pip install -r requirements.txt
 ```
 requirements.txt contents:
 
-text
-Copy
-Edit
+```
 streamlit
 pandas
 plotly
 matplotlib
 seaborn
+```
 
 
 
