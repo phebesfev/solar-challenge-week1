@@ -31,6 +31,7 @@ streamlit run main.py
  ```
 
 📁 Project Structure
+```
 
 solar-challenge-week1/
 ├── .gitignore                   # Excludes 'data/' and other artifacts
@@ -59,7 +60,9 @@ solar-challenge-week1/
 ├── venv/                       # Virtual environment (excluded by .gitignore)
 └── README.md                   # Project documentation (this file)
 
-📊 Features
+```
+
+### 📊 Features
 📈 Box plot of GHI distribution per country
 
 📋 Summary statistics (GHI, DNI, DHI)
@@ -72,7 +75,8 @@ solar-challenge-week1/
 
 🧹 Notebook: Senegal dataset cleaning and EDA
 
-📦 Requirements
+
+###📦 Requirements
 Install with:
 
 ```
